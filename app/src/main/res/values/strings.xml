@@ -4,4 +4,5 @@
     <string name="invalid_lat_long_used">Invalid Latitude or Longitude Used</string>
     <string name="no_address_found">No corresponding address found for location</string>
     <string name="address_found">Corresponding address found</string>
+    <string name="no_geocoder_available">No Geocoder Available</string>
 </resources>

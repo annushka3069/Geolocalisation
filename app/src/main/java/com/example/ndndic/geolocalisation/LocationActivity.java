@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.Handler;
 import android.os.ResultReceiver;
@@ -252,7 +253,7 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
                 if (mAddressRequested) {
                     startIntentService();
                 }
-
+            }
         }
 
     }
