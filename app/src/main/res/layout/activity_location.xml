@@ -9,61 +9,86 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ndndic.geolocalisation.LocationActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/LatText"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/LongText"
-        android:layout_above="@+id/LatText"
-         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/UpdateTimeText"
-        android:layout_above="@+id/LongText"
-         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/AdressText"
-        android:layout_above="@+id/fetchButton"
-         />
+
     <Button
         android:text="Start Update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/startButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp" />
 
     <Button
         android:text="Stop Update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/stopButton"
+        android:layout_marginBottom="19dp"
         android:layout_above="@+id/startButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Fetch Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fetchButton"
+        android:layout_marginBottom="23dp"
         android:layout_above="@+id/stopButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <Button
         android:text="Display MAP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/displayButton"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/fetchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LatText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Latitude"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdateTimeText"
+        android:layout_marginBottom="55dp"
         android:layout_above="@+id/AdressText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="UpdateTime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LongText"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/LatText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:text="Longitude"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AdressText"
+        android:layout_above="@+id/displayButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:text="Adresse"/>
 
 </RelativeLayout>
