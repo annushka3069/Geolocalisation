@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Geolocalisation</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">Invalid Latitude or Longitude Used</string>
+    <string name="no_address_found">No corresponding address found for location</string>
+    <string name="address_found">Corresponding address found</string>
+</resources>
